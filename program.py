@@ -7,10 +7,10 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import GridSearchCV
 
 # Loading datasets
-translatoare_df = pd.read_csv('./datasets/translatoareteleviziune.csv')
-statii_df = pd.read_csv('./datasets/statiiteleviziune.csv')
-inflatie_df = pd.read_csv('./datasets/ratainflatiei.csv')
-abonamente_df = pd.read_csv('./datasets/abonamenteteleviziune.csv')
+translatoare_df = pd.read_csv('translatoareteleviziune.csv')
+statii_df = pd.read_csv('statiiteleviziune.csv')
+inflatie_df = pd.read_csv('ratainflatiei.csv')
+abonamente_df = pd.read_csv('abonamenteteleviziune.csv')
 
 # Cleaning column names
 translatoare_df.columns = translatoare_df.columns.str.strip()
